@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+
+<title>HORIZON 5A3</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">
+HORIZON ✔
+</div>
+
+<ul>
+
+<li><a href="#home">Trang chủ</a></li>
+
+<li><a href="#members">Thành viên</a></li>
+
+<li><a href="#timeline">Timeline</a></li>
+
+<li><a href="#confession">Confession</a></li>
+
+</ul>
+
+</nav>
+
+<section id="home" class="hero">
+
+<video autoplay muted loop>
+
+<source src="assets/bg.mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>5A3 OFFICIAL</h1>
+
+<p>
+"5 năm tưởng dài, hóa ra nhanh hơn giờ kiểm tra Toán."
+</p>
+
+<button onclick="goDown()">
+
+ENTER
+
+</button>
+
+</div>
+
+</section>
+
+<section id="members">
+
+<h2>
+👥 THÀNH VIÊN
+</h2>
+
+<div class="grid">
+
+<div class="card"
+onclick="showMember('Nguyễn Minh Thủy','Lớp trưởng 👑')">
+
+<img src="assets/avatar.jpg">
+
+<h3>Nguyễn Minh Thủy</h3>
+
+</div>
+
+<div class="card"
+onclick="showMember('Đinh Thị Hồng Anh','Thành viên')">
+
+<img src="assets/avatar.jpg">
+
+<h3>Đinh Thị Hồng Anh</h3>
+
+</div>
+
+<div class="card"
+onclick="showMember('Trần Thế Sơn','Thành viên')">
+
+<img src="assets/avatar.jpg">
+
+<h3>Trần Thế Sơn</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="timeline">
+
+<h2>
+📆 TIMELINE
+</h2>
+
+<div class="time">
+
+Lớp 1 → Chưa biết nhau
+
+</div>
+
+<div class="time">
+
+Lớp 2 → Bắt đầu thân
+
+</div>
+
+<div class="time">
+
+Lớp 3 → Drama đầu tiên 😏
+
+</div>
+
+<div class="time">
+
+Lớp 4 → Quậy nhiều hơn học
+
+</div>
+
+<div class="time">
+
+Lớp 5 → Thanh xuân
+
+</div>
+
+</section>
+
+<section id="confession">
+
+<h2>
+💌 CONFESSION
+</h2>
+
+<input
+id="msg"
+placeholder="Viết lời nhắn...">
+
+<button
+onclick="sendMessage()">
+
+Gửi
+
+</button>
+
+<div id="messages">
+
+</div>
+
+</section>
+
+<div id="popup">
+
+<div class="box">
+
+<h2 id="popupName">
+
+</h2>
+
+<p id="popupDesc">
+
+</p>
+
+<button
+onclick="closePopup()">
+
+Đóng
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js">
+
+</script>
+
+</body>
+</html>
